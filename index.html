@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO & Social Engineering: Títulos persuasivos -->
+    <title>🚀 Tu Marca al Siguiente Nivel | Loana Digital</title>
+    <meta name="description" content="¿Sentís que tu negocio está estancado? Transformamos tus redes en una máquina de ventas. Diseño Estratégico, Branding y Ads. 🦋 ¡Hacé clic y mirá nuestros casos de éxito!" />
+    <meta name="keywords" content="Marketing Digital Argentina, Community Manager, Diseño Gráfico, Branding, Meta Ads, Gestión de Redes Sociales, Loana Digital, Vender en Instagram" />
+    <meta name="author" content="Loana Digital" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook / WhatsApp (La clave para compartir) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://loanadigital.com/" />
+    <meta property="og:title" content="🚀 Tu Marca al Siguiente Nivel | Loana Digital" />
+    <meta property="og:description" content="Estrategias que venden y Diseños que enamoran. 🦋 ¿Querés profesionalizar tu emprendimiento? Entrá acá." />
+    <!-- NOTA: WhatsApp necesita una URL completa (https://...) a una imagen JPG/PNG. He puesto una imagen estética rosa temporal.
+         Cuando tengas tu dominio, cambiá esto por tu archivo 'preview.png' con tu logo. -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&h=630&auto=format&fit=crop" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Loana Digital" />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Loana Digital | Marketing & Diseño" />
+    <meta name="twitter:description" content="Potenciá tu emprendimiento con estrategias reales. Branding, Redes y Publicidad." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&h=630&auto=format&fit=crop" />
+
+    <!-- Favicon (Tu Mariposa) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23e91e63' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'><path d='M50 25 V75' stroke-width='4' opacity='0.5' /><path d='M50 35 C 70 15, 90 10, 90 35 C 90 55, 60 60, 50 55' /><path d='M50 35 C 30 15, 10 10, 10 35 C 10 55, 40 60, 50 55' /><path d='M50 55 C 60 65, 80 70, 80 85 C 80 95, 60 85, 50 75' /><path d='M50 55 C 40 65, 20 70, 20 85 C 20 95, 40 85, 50 75' /><circle cx='50' cy='25' r='3' fill='%23e91e63' stroke='none' /></svg>">
+
+    <!-- JSON-LD Structured Data (Google ama esto) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Loana Digital",
+        "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+        "description": "Agencia de Marketing Digital y Diseño Gráfico especializada en potenciar emprendimientos.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "priceRange": "$$",
+        "telephone": "+5491158490347",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fdf2f8',
+                100: '#fce7f3',
+                200: '#fbcfe8',
+                300: '#f9a8d4',
+                400: '#f472b6',
+                500: '#ec4899',
+                600: '#e91e63', // Original Primary Pink
+                700: '#be185d',
+                800: '#9d174d',
+                900: '#831843',
+              }
+            },
+            animation: {
+              'float': "float 6s ease-in-out infinite",
+              'float-subtle': "floatSubtle 5s ease-in-out infinite", // Less movement
+              'spin-sporadic': "spinSporadic 12s ease-in-out infinite", // Occasional spin
+              'float-slow': "float 8s ease-in-out infinite",
+              'pulse-slow': "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              'modal-pop': "modal-pop 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+              'fade-in-up': "fadeInUp 0.8s ease-out forwards",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-15px)" },
+              },
+              floatSubtle: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-3px)" }, // Very subtle
+              },
+              spinSporadic: {
+                "0%, 85%": { transform: "rotate(0deg)" },
+                "90%": { transform: "rotate(15deg)" },
+                "95%": { transform: "rotate(-10deg)" },
+                "100%": { transform: "rotate(0deg)" }
+              },
+              'modal-pop': {
+                "0%": { opacity: "0", transform: "scale(0.95) translateY(20px)" },
+                "100%": { opacity: "1", transform: "scale(1) translateY(0)" }
+              },
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" }
+              }
+            },
+            backgroundImage: {
+              'noise': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Art Deco / Glass Global Styles */
+      body {
+        padding-bottom: 80px;
+        background-color: #fafafa;
+        background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.03%22/%3E%3C/svg%3E');
+      } 
+      @media (min-width: 768px) {
+        body { padding-bottom: 0; }
+      }
+      
+      .glass-card {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+      }
+      
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .glass-dark {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(233, 30, 99, 0.3);
+        border-radius: 10px;
+      }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, #e91e63 0%, #be185d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Canvas Background Z-Index */
+      #particle-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      /* App Styles */
+      .appContainer {
+        min-height: 100vh;
+        position: relative;
+        background-color: transparent;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .mainContent {
+        position: relative;
+        z-index: 10;
+      }
+
+      /* Navbar Styles */
+      .navContainer {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 50;
+        transition: all 0.5s ease-in-out;
+      }
+      .glassNav {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .transparentNav {
+        background-color: transparent;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+      }
+      .logoText {
+        font-family: sans-serif;
+        transition: color 0.3s;
+      }
+      .navLink {
+        transition: all 0.3s;
+      }
+      .ctaButton {
+        box-shadow: 0 4px 14px 0 rgba(233,30,99,0.39);
+      }
+      .ctaButton:hover {
+        box-shadow: 0 6px 20px rgba(233,30,99,0.23);
+        transform: translateY(-2px);
+      }
+
+      /* Hero Styles */
+      .heroSection {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem;
+        overflow: hidden;
+      }
+      .gradientMesh1 {
+        background: radial-gradient(var(--tw-gradient-stops));
+        --tw-gradient-from: rgba(251, 207, 232, 0.4);
+        --tw-gradient-to: transparent;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .gradientMesh2 {
+        background: radial-gradient(var(--tw-gradient-stops));
+        --tw-gradient-from: rgba(233, 213, 255, 0.4);
+        --tw-gradient-to: transparent;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+      }
+      .logoCard {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .textGradient {
+        background: linear-gradient(135deg, #e91e63 0%, #be185d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* About Styles */
+      .aboutSection {
+        background-color: rgba(253, 242, 248, 0.5);
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      .imageContainer {
+        position: relative;
+      }
+      .backgroundShape {
+        position: absolute;
+        inset: 0;
+        background-color: #fbcfe8;
+        border-radius: 2rem;
+        transform: rotate(3deg);
+      }
+      .profileImage {
+        position: relative;
+        border-radius: 2rem;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      @media (min-width: 768px) {
+        .profileImage {
+          height: 500px;
+        }
+      }
+
+      /* Services Styles */
+      .servicesSection {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        position: relative;
+      }
+      .serviceCard {
+        position: relative;
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 2rem;
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+      .serviceCard:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .activeCard {
+        grid-row: span 2;
+        box-shadow: 0 0 0 1px #fbcfe8; 
+      }
+
+      /* Portfolio Styles */
+      .portfolioSection {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        position: relative;
+      }
+      .portfolioCard {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 2rem;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.5s;
+        position: relative;
+      }
+      .portfolioCard:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
+      }
+      .modalOverlay {
+        background-color: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+      }
+      .modalContent {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(24px);
+        border-radius: 2.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+
+      /* AiConsultant Styles */
+      .chatSection {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        position: relative;
+        overflow: hidden;
+        background-color: #0f172a;
+      }
+      .chatWindow {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 2.5rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        position: relative;
+      }
+      .userMessage {
+        background-color: #2563eb;
+        color: white;
+        border-bottom-right-radius: 0.125rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+      .botMessage {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #e2e8f0;
+        border-bottom-left-radius: 0.125rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(4px);
+      }
+
+      /* Contact Styles */
+      .contactSection {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        position: relative;
+      }
+      .glassCard {
+        background: rgba(255, 255, 255, 0.65);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border-radius: 2rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .gradientBlob {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+        height: 400px;
+        background-color: #fdf2f8;
+        border-radius: 9999px;
+        filter: blur(80px);
+        z-index: -10;
+        opacity: 0.6;
+      }
+      .contactItem {
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 1px solid white;
+        transition: all 0.3s;
+      }
+      .contactItem:hover {
+        background-color: white;
+      }
+
+      /* Footer Styles */
+      .footer {
+        background-color: #0f172a;
+        color: #94a3b8;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-top: 1px solid #1e293b;
+        position: relative;
+        z-index: 10;
+      }
+      .socialIcon {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 9999px;
+        background-color: #1e293b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+      }
+      .socialIcon:hover {
+        background-color: #e91e63;
+        color: white;
+      }
+
+      /* MobileNav Styles */
+      .mobileNav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: 1px solid #f1f5f9;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+        z-index: 50;
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .centerButton {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 9999px;
+        background: linear-gradient(135deg, #ec4899 0%, #e91e63 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3);
+        transition: transform 0.3s;
+      }
+      .centerButton:active {
+        transform: scale(0.95);
+      }
+      .navItem {
+        transition: color 0.3s;
+      }
+
+      /* Butterfly Styles */
+      .svgIcon {
+        display: block;
+      }
+
+      /* ParticleBackground Styles */
+      .canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        pointer-events: none;
+      }
+
+      /* AiMarketingTool Styles */
+      .toolSection {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background: linear-gradient(to bottom right, #0f172a, #1e293b);
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+      .glowBlob {
+        position: absolute;
+        width: 24rem;
+        height: 24rem;
+        border-radius: 9999px;
+        filter: blur(100px);
+        opacity: 0.2;
+      }
+      .inputCard {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+      }
+      .resultCard {
+        background-color: #0f172a;
+        border: 1px solid #334155;
+        border-radius: 1.5rem;
+        padding: 2rem;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased selection:bg-brand-200 selection:text-brand-800">
+    <div id="root"></div>
+  </body>
+</html>

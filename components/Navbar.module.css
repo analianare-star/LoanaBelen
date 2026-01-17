@@ -1,0 +1,41 @@
+
+.navContainer {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  transition: all 0.5s ease-in-out;
+}
+
+.glassNav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.transparentNav {
+  background-color: transparent;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.logoText {
+  font-family: sans-serif;
+  transition: color 0.3s;
+}
+
+.navLink {
+  transition: all 0.3s;
+}
+
+.ctaButton {
+  box-shadow: 0 4px 14px 0 rgba(233,30,99,0.39);
+}
+
+.ctaButton:hover {
+  box-shadow: 0 6px 20px rgba(233,30,99,0.23);
+  transform: translateY(-2px);
+}

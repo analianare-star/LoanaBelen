@@ -1,0 +1,33 @@
+
+.mobileNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #f1f5f9;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+  z-index: 50;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.centerButton {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #ec4899 0%, #e91e63 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3);
+  transition: transform 0.3s;
+}
+
+.centerButton:active {
+  transform: scale(0.95);
+}
+
+.navItem {
+  transition: color 0.3s;
+}

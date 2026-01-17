@@ -1,0 +1,12 @@
+
+.appContainer {
+  min-height: 100vh;
+  position: relative;
+  background-color: transparent;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.mainContent {
+  position: relative;
+  z-index: 10;
+}

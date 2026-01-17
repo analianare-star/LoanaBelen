@@ -1,0 +1,28 @@
+
+.servicesSection {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.serviceCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 2rem;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.serviceCard:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.activeCard {
+  grid-row: span 2;
+  box-shadow: 0 0 0 1px #fbcfe8; 
+}
